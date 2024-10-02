@@ -1,0 +1,67 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.header {
+    width: 100%;
+    height: 250px; 
+    background-image: url('header.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.qiskitstuff {
+    margin-top: 20px;
+    width: 90%;
+}
+
+.cardscontainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Hides overflowing cards */
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.5s ease; /* Smooth transition */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.cardtext {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.swipe-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #000000;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.swipe-button:hover {
+    background-color: #0056b3;
+}
