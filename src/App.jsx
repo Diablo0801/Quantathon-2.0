@@ -5,7 +5,7 @@ import './App.css'
 import Nav from './maincontent'
 import Countdown from './countdown'
 import About from './about'
-import Bg from './bg'
+
 import Qiskit from './qiskit'
 
 

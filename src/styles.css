@@ -43,10 +43,10 @@
     margin-bottom: -800px;
 }
 
-.maincontent h1 {
-    font-size: 4rem;
- 
-    color: #dc5198;
+.quantathon-logo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 .maincontent h2 {
@@ -72,7 +72,6 @@
 .about {
     margin-top: 200px;
     font-size: 1.5rem;
-
     padding: 20px; 
     border-radius: 50px; 
     margin-bottom: 400px;

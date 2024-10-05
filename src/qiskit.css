@@ -7,8 +7,8 @@
 }
 
 .header {
-    width: 100%;
-    height: 250px; 
+    width: 132%;
+    height: 500px; 
     background-image: url('header.png');
     background-size: cover;
     background-position: center;
@@ -23,7 +23,7 @@
 .cardscontainer {
     position: relative;
     width: 100%;
-    overflow: hidden; /* Hides overflowing cards */
+    overflow: hidden;
 }
 
 .card {
@@ -31,7 +31,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: transform 0.5s ease; /* Smooth transition */
+    justify-content: center;
+    transition: transform 0.5s ease; 
 }
 
 .card img {
@@ -39,9 +40,44 @@
     height: auto;
 }
 
-.cardtext {
+.card-1 img {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.card-1 h2 {
+    font-size: 24px;
     text-align: center;
+}
+
+.card-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card-2 .image-left {
+    width: 40%;
+    margin-right: 20px;
+}
+
+.card-2 .text-right {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.card-2 h2 {
+    font-size: 22px;
+}
+
+.card-2 p {
     margin-top: 10px;
+    font-size: 16px;
+}
+
+.full-card-image {
+    width: 100%;
+    height: 100%;
 }
 
 .controls {

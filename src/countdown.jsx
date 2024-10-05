@@ -10,7 +10,7 @@ const App = () => {
         const seconds = Math.floor((total / 1000) % 60);
         const minutes = Math.floor((total / 1000 / 60) % 60);
         const hours = Math.floor((total / 1000 / 60 / 60) % 24);
-        const days = Math.floor(total / (1000 * 60 * 60 * 24)); // Calculate days
+        const days = Math.floor(total / (1000 * 60 * 60 * 24)); 
         return {
             total,
             days,
@@ -24,7 +24,7 @@ const App = () => {
         let { total, days, hours, minutes, seconds } = getTimeRemaining(e);
         if (total >= 0) {
             setTimer(
-                (days > 9 ? days : "0" + days) + ":" + // Format days
+                (days > 9 ? days : "0" + days) + ":" +
                 (hours > 9 ? hours : "0" + hours) + ":" +
                 (minutes > 9 ? minutes : "0" + minutes) + ":" +
                 (seconds > 9 ? seconds : "0" + seconds)
@@ -33,7 +33,7 @@ const App = () => {
     };
 
     const clearTimer = (e) => {
-        setTimer("02:00:00:00"); // Set initial timer to 48 hours in days:hours:minutes:seconds format
+        setTimer("02:00:00:00"); 
 
         if (Ref.current) clearInterval(Ref.current);
         const id = setInterval(() => {
@@ -44,13 +44,13 @@ const App = () => {
 
     const getDeadTime = () => {
         let deadline = new Date();
-        deadline.setHours(deadline.getHours() + 48); // Set deadline to 48 hours from now
+        deadline.setHours(deadline.getHours() + 48); 
         return deadline;
     };
 
     useEffect(() => {
         clearTimer(getDeadTime());
-        return () => clearInterval(Ref.current); // Cleanup interval on unmount
+        return () => clearInterval(Ref.current);
     }, []);
 
     const onClickReset = () => {
