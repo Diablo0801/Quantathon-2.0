@@ -5,8 +5,8 @@ const Qiskit = () => {
   const cards = [
     {
       id: 1,
-      image: './public/image1.png', // First card's image
-      heading: 'Heading 1',
+      image: '/qiskit.jpg', // First card's image
+      heading: 'IBM qiskit',
       text: 'Card 1 Description',
     },
     {
