@@ -5,19 +5,19 @@ const Qiskit = () => {
   const cards = [
     {
       id: 1,
-      image: '/qiskit.jpg', // First card's image
+      image: '/qiskit.jpg', 
       heading: 'IBM qiskit',
       text: 'Card 1 Description',
     },
     {
       id: 2,
-      image: 'image2.png', // Second card's image
-      heading: 'Heading 2',
+      image: 'buddy.jpeg', 
+      heading: 'Speakers',
       text: 'Card 2 Description',
     },
     {
       id: 3,
-      image: 'image3.png', // Third card's image
+      image: 'Timeline.png', 
       heading: '',
       text: '',
     },
