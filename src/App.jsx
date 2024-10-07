@@ -11,6 +11,7 @@ import Main from './maincontent'
 import EventDetails from './EventDetails'
 import FAQ from './faq'
 import Sponsors from './sponsors'
+import TracksComponent from './TracksComponent/TracksComponent'
 // import Guest from './guests'
 
 
@@ -25,6 +26,7 @@ function App() {
       <About/>
       <Qiskit/>
       <EventDetails/>
+      <TracksComponent/>
       
       <FAQ/>
       {/* <Guest/> */}
