@@ -1,36 +1,3 @@
-/* Navbar at the top */
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    z-index: 1000;
-}
-
-.navbar ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-}
-
-.navbar a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    padding: 15px 20px;
-    display: block;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-}
-
-.navbar a:hover {
-    background-color: hsl(0, 0%, 100%);
-    color: rgb(0, 0, 0);
-}
-
 /* Main content */
 .content {
     min-height: 100vh; 
@@ -63,7 +30,6 @@
     text-align: center;
 }
 
-
 .about {
     margin-top: 200px;
     font-size: 1.5rem;
@@ -72,7 +38,7 @@
     margin-bottom: 400px;
 }
 
-
+/* Apply button styling */
 .apply-button {
     margin-top: 20px;
     padding: 10px 20px;
@@ -83,7 +49,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .apply-button:hover {
@@ -96,7 +62,7 @@
 }
 
 
-.floating-navbar {
+/* .floating-navbar {
     position: fixed;
     left: 20px;
     top: 50%;
@@ -114,11 +80,11 @@
     justify-content: center;
     cursor: pointer;
     position: relative;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.4s ease-in-out;
 }
 
 .main-circle:hover {
-    background-color: #333;
+   
 }
 
 .circle-image {
@@ -136,7 +102,7 @@
     gap: 10px;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
 }
 
 .main-circle:hover .dropdown {
@@ -144,20 +110,90 @@
     visibility: visible;
 }
 
-
 .dropdown-circle {
     width: 60px;
     height: 60px;
-    background-color: #444;
+    
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
 
 .dropdown-circle:hover {
-    background-color: #666;
+  
+    transform: scale(1.05); 
+}
+
+.dropdown-circle img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+} */
+
+.floating-navbar {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1100;
+}
+
+.main-circle {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 1); /* Solid background */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.4s ease-in-out;
+}
+
+.circle-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 20px; /* Adds space between main circle and dropdown circles */
+    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+}
+
+.main-circle:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent white background for glass effect */
+    backdrop-filter: blur(10px); /* Glassmorphism blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for glass effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: background-color 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.dropdown-circle:hover {
+    transform: scale(1.05); 
 }
 
 .dropdown-circle img {
