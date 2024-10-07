@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   font-family:'Courier New', Courier, monospace;
   line-height: 1.5;

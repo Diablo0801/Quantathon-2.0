@@ -8,6 +8,7 @@ import About from './about'
 import Qiskit from './qiskit'
 import Footer from './Footer'
 import Main from './maincontent'
+import EventDetails from './EventDetails'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Countdown/>
       <About/>
       <Qiskit/>
+      <EventDetails/>
       
     </>
   )
