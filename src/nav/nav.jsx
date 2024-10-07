@@ -19,7 +19,7 @@ function Navbar() {
           <a href="#qiskit" className="dropdown-circle">
             <img src={timelineIcon} alt="Timeline" />
           </a>
-          <a href="#prizes" className="dropdown-circle">
+          <a href="#tracks" className="dropdown-circle">
             <img src={prizesIcon} alt="Prizes" />
           </a>
           <a href="#faqs" className="dropdown-circle">
