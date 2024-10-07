@@ -3,7 +3,7 @@ import './styles.css'
 
 const maincontent = () => {
   return (
-    <div className="content">
+    <div id="main" className="content">
           <img
             src="https://fontmeme.com/permalink/241005/71792b734988fad71ee7bf1436cf67ce.png"
             alt="tron-font"

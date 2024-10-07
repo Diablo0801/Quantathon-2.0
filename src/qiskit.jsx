@@ -41,11 +41,11 @@ const Qiskit = () => {
   }, []);
 
   return (
-    <div className="content">
+    <div  className="content">
       <div className="header"></div>
       <div className="qiskitstuff">
         <div className="cardscontainer">
-          <div 
+          <div id="qiskit"
             className="cards-slider" 
             style={{ transform: `translateX(-${currentCardIndex * 100}%)` }}
           >
