@@ -10,6 +10,7 @@ import Footer from './Footer'
 import Main from './maincontent'
 import EventDetails from './EventDetails'
 import FAQ from './faq'
+import Sponsors from './sponsors'
 // import Guest from './guests'
 
 
