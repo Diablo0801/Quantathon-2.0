@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './qiskit.css';
 
 const Qiskit = () => {
@@ -11,16 +11,10 @@ const Qiskit = () => {
     },
     {
       id: 2,
-      image: 'buddy.jpeg', 
-      heading: 'Speakers',
-      text: 'Card 2 Description',
-    },
-    {
-      id: 3,
       image: 'Timeline.png', 
       heading: '',
-      text: '',
-    },
+      text: '', 
+    }
   ];
 
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
@@ -37,30 +31,37 @@ const Qiskit = () => {
     );
   };
 
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleSwipeLeft();
+    }, 5000); 
+    
+    return () => clearInterval(interval); 
+  }, []);
+
   return (
     <div className="content">
       <div className="header"></div>
       <div className="qiskitstuff">
         <div className="cardscontainer">
-          <div className={`card card-${cards[currentCardIndex].id}`}>
-            {currentCardIndex === 0 && (
-              <>
-                <img src={cards[0].image} alt="Card 1" />
-                <h2>{cards[0].heading}</h2>
-              </>
-            )}
-            {currentCardIndex === 1 && (
-              <>
-                <img src={cards[1].image} alt="Card 2" className="image-left" />
-                <div className="text-right">
-                  <h2>{cards[1].heading}</h2>
-                  <p>{cards[1].text}</p>
-                </div>
-              </>
-            )}
-            {currentCardIndex === 2 && (
-              <img src={cards[2].image} alt="Card 3" className="full-card-image" />
-            )}
+          <div 
+            className="cards-slider" 
+            style={{ transform: `translateX(-${currentCardIndex * 100}%)` }}
+          >
+            {cards.map((card, index) => (
+              <div key={card.id} className="card">
+                {index === 1 ? (
+                  <img src={card.image} alt={`Card ${index + 1}`} className="full-card-image" />
+                ) : (
+                  <>
+                    <img src={card.image} alt={`Card ${index + 1}`} />
+                    <h2>{card.heading}</h2>
+                    <p>{card.text}</p>
+                  </>
+                )}
+              </div>
+            ))}
           </div>
         </div>
         <div className="controls">
