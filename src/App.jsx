@@ -10,7 +10,7 @@ import Footer from './Footer'
 import Main from './maincontent'
 import EventDetails from './EventDetails'
 import FAQ from './faq'
-import Guest from './guests'
+// import Guest from './guests'
 
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
       <EventDetails/>
       
       <FAQ/>
-      <Guest/>
+      {/* <Guest/> */}
     </>
   )
 }
