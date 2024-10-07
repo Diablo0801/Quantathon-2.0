@@ -1,3 +1,4 @@
+/* Navbar at the top */
 .navbar {
     position: fixed;
     top: 0;
@@ -30,7 +31,8 @@
     color: rgb(0, 0, 0);
 }
 
-.maincontent {
+/* Main content */
+.content {
     min-height: 100vh; 
     width: 100vw; 
     display: flex;
@@ -40,7 +42,8 @@
     text-align: center;
     color: white;
     padding: 200px 0;
-    margin-bottom: -800px;
+    margin-bottom: -300px;
+    margin-top: -450px;
 }
 
 .quantathon-logo {
@@ -60,14 +63,6 @@
     text-align: center;
 }
 
-.first {
-    align-items: center;
-    display: flex;
-}
-
-.image {
-    background-image: url('/header.png');
-}
 
 .about {
     margin-top: 200px;
@@ -98,4 +93,75 @@
 
 .apply-button:focus {
     outline: none;
+}
+
+
+.floating-navbar {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1100;
+}
+
+.main-circle {
+    width: 80px;
+    height: 80px;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.main-circle:hover {
+    background-color: #333;
+}
+
+.circle-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.dropdown {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.main-circle:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.dropdown-circle {
+    width: 60px;
+    height: 60px;
+    background-color: #444;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-circle:hover {
+    background-color: #666;
+}
+
+.dropdown-circle img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
