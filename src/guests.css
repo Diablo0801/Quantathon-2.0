@@ -1,0 +1,126 @@
+/* Base styles for large devices */
+.background {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.guest-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.guest-title {
+    font-size: 4em;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    color: rgba(179, 28, 44);
+}
+
+.guest-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures image is on the right */
+    width: 550px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    background-color: rgba(33,36,44);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px; /* Add padding to the container */
+}
+
+.guest-card-image {
+    order: 2; /* Move the image to the right */
+    width: 150px; /* Fix width for the image */
+    height: 150px; /* Make it square */
+    object-fit: cover;
+    border-radius: 10px; /* Rounded corners */
+    border: 4px solid white; /* Add white border */
+}
+
+
+.guest-details {
+    order: 1; /* Ensure content appears on the left */
+    flex: 1;
+    padding-right: 20px; /* Space between text and image */
+    color: #fff;
+}
+
+.guest-name {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+    text-align: left;
+}
+
+.guest-info {
+    margin: 0;
+    color: #ccc;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+/* Medium devices (tablets, small desktops) */
+@media screen and (max-width: 960px) {
+    .guest-title {
+        font-size: 3em;
+    }
+
+    .guest-card {
+        width: 400px;
+        flex-direction: row; /* Maintain horizontal layout */
+        justify-content: space-between; /* Keep image on the right */
+    }
+
+    .guest-card-image {
+        width: 120px; /* Smaller image size */
+        height: 120px;
+        padding: 0;
+        margin-left: 10px;
+    }
+
+    .guest-details {
+        padding: 0;
+    }
+}
+
+/* Small devices (phones) */
+@media screen and (max-width: 600px) {
+    .guest-title {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    .guest-card {
+        width: 80%; /* Full width on small screens */
+        flex-direction: row; /* Maintain horizontal layout */
+        justify-content: space-between; /* Keep image on the right */
+        margin-bottom: 20px;
+    }
+
+    .guest-name {
+        font-size: 1em;
+    }
+
+    .guest-info {
+        font-size: 0.8rem;
+        line-height: 0.8rem;
+    }
+
+    .guest-card-image {
+        width: 100px;
+        height: 100px;
+        padding: 0;
+        margin-left: 10px;
+    }
+}

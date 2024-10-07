@@ -1,0 +1,183 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+/* Base footer styles */
+html {
+    scroll-behavior: smooth;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    min-height: 230px;  
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;   /* Ensuring no overflow */
+}
+
+/* Footer content wrapper */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+    padding: 0px 50px 0px 0px;
+    box-sizing: border-box;
+}
+
+.footer-logo {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-logo img {
+    width: 178px;
+    height: 170px;
+    margin-top: 25px;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    padding: 0px 10px; 
+    margin-top: 10px;
+}
+
+.footer-menu .explore,
+.footer-menu .contact {
+    margin-left: 50px;
+    text-align: justify;
+}
+
+.footer-menu h4 {
+    margin-bottom: 5px;
+}
+
+.footer-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-menu li {
+    margin: 5px 0;
+}
+
+.footer-menu a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-menu a:hover {
+    color: #66fcf1;
+}
+
+/* Footer icons */
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.footer-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.footer-icons a:hover {
+    color: #66fcf1;
+}
+
+/* Scroll to top */
+.scroll-to-top {
+    margin-top:3px;
+}
+
+.scroll-to-top a {
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.scroll-to-top a:hover {
+    color: #66fcf1;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+}
+
+/* Media Query for Small Devices */
+@media (max-width: 768px) {
+    .footer {
+        overflow-x: hidden;
+    }
+
+    .footer-content {
+        padding: 0px 0px; 
+        width: 100%; 
+        box-sizing: border-box; 
+    }
+
+    .footer-logo {
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .footer-menu {
+        display: flex;
+        justify-content: flex-end;
+        flex: 1;
+        margin-left: 0px; 
+        margin-right: 0px;
+        box-sizing: border-box;
+    }
+
+    .footer-menu .contact{
+        margin-right: 20px;
+        text-align: justify;
+        margin-left: 20px;
+    }
+
+    .footer-menu .explore{
+        margin-left: -43px;
+    }
+
+    .footer-menu .explore{
+        text-align:justify;
+    }
+
+    .footer-logo img {
+        width: 130px; 
+        height: auto; 
+    }
+
+    .footer-menu a {
+        font-size: 14px; 
+    }
+
+    /* Ensure footer icons and other elements fit within the viewport */
+    .footer-icons {
+        margin-top: 15px; 
+    }
+
+    .scroll-to-top {
+        display: none;
+    }
+
+    .copyright {
+        margin-top: 15px;
+        font-size: 12px;
+    }
+}
