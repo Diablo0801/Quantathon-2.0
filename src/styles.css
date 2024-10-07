@@ -76,3 +76,26 @@
     border-radius: 50px; 
     margin-bottom: 400px;
 }
+
+
+.apply-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: #000000; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+    background-color: #ffffff; 
+    color: black;
+}
+
+.apply-button:focus {
+    outline: none;
+}
