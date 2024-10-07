@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.sponsors-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sponsor-title {
+  color: red;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Sponsor Level Titles */
+.sponsor-level h2 {
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.platinum-title {
+  color: #e5e4e2;
+  font-size: 2rem;
+  margin-top: 50px;
+}
+
+.gold-title {
+  color: #ffd700;
+  font-size: 2rem;
+  margin-top: 50px;
+}
+
+.silver-title {
+  color: #c0c0c0;
+  font-size: 2rem;
+  margin-top: 50px;
+}
+
+/* Generic grid for sponsors */
+.sponsor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.platinum-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 40px;
+  justify-content: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+.sponsor-card {
+  width: 150px;
+  height: 200px;
+  background-color: #000;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.sponsor-card:hover {
+  transform: scale(1.05);
+}
+
+.sponsor-logo {
+  width: 100px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.sponsor-card p {
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Custom Silver Grid */
+.silver-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create 3 columns */
+  gap: 40px;
+  justify-content: center; /* Center the entire grid within its container */
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Centering the Silver Grid for Medium and Small Screens */
+@media (max-width: 768px) {
+  .sponsor-grid, .platinum-grid, .silver-grid {
+    grid-template-columns: repeat(2, 1fr); /* Use 2 columns for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .sponsor-grid, .platinum-grid, .silver-grid {
+    grid-template-columns: 1fr; /* Single column for small screens */
+  }
+}
