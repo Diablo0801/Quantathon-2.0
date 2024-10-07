@@ -5,8 +5,8 @@ import './App.css'
 import Nav from './maincontent'
 import Countdown from './countdown'
 import About from './about'
-
 import Qiskit from './qiskit'
+import Footer from './Footer'
 
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
       <Countdown/>
       <About/>
       <Qiskit/>
+      
     </>
   )
 }
