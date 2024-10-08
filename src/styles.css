@@ -71,13 +71,13 @@
 }
 
 .custom-button:hover {
-    background-color: #4a5568; /* Slightly lighter grey on hover */
+    background-color: #1bd411; /* Slightly lighter grey on hover */
 }
 
 /* Button Icon Styling with Transparency */
 .button-icon {
-    width: 40px;               /* Increased icon width */
-    height: 40px;              /* Increased icon height */
+    width: 80px;               /* Increased icon width */
+    height: 80px;              /* Increased icon height */
     object-fit: contain;       /* Ensure icon fits without distortion */
     padding: 2px;              /* Small padding around the icon */
     margin-right: 15px;        /* Increased space to shift icon left */
