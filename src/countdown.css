@@ -19,9 +19,24 @@ body {
 }
 
 h3 {
-    font-size: 28px;
+    font-size: 48px; /* Increase font size */
     margin-bottom: 20px;
     color: #00ff7f; /* Parrot Green */
+    text-transform: uppercase; /* Make it all uppercase */
+    letter-spacing: 4px; /* Add letter spacing for a futuristic effect */
+    text-shadow: 0 0 10px #00ff7f, 0 0 20px #00ff7f, 0 0 30px #00ff7f; /* Neon glow effect */
+    font-weight: bold; /* Make it bold */
+    animation: glow 2s ease-in-out infinite alternate; /* Subtle glowing animation */
+}
+
+/* Neon glow effect animation */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #00ff7f, 0 0 20px #00ff7f, 0 0 30px #00ff7f;
+    }
+    100% {
+        text-shadow: 0 0 20px #00ff7f, 0 0 30px #00ff7f, 0 0 40px #00ff7f;
+    }
 }
 
 .countdown-timer {
