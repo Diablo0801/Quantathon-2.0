@@ -16,7 +16,7 @@ function Navbar() {
           <a href="#main" className="dropdown-circle">
             <img src={dashboardIcon} alt="Dashboard" />
           </a>
-          <a href="#qiskit" className="dropdown-circle">
+          <a href="#timeline" className="dropdown-circle">
             <img src={timelineIcon} alt="Timeline" />
           </a>
           <a href="#tracks" className="dropdown-circle">
