@@ -71,14 +71,14 @@
 .floating-navbar {
     position: fixed;
     left: 20px;
-    top: 10%; 
+    top: 32%; 
     transform: translateY(-50%);
     z-index: 1100;
 }
 
 .main-circle {
-    width: 10vw; 
-    height: 10vw;
+    max-width: 6vw;
+    max-width:6vw;
     min-width: 50px; 
     min-height: 50px;
     background-color: rgba(0, 0, 0, 1);
@@ -120,9 +120,9 @@
 }
 
 .dropdown-circle {
-    width: 9vw; 
-    height: 9vw;
-    min-width: 40px;
+    width: 4vw; 
+    height: 4vw;
+    min-width: 40px; 
     min-height: 40px;
     border-radius: 50%;
     display: flex;
@@ -153,8 +153,8 @@
 
 .content h2 {
     margin-top: -10px;
-    font-size: 5vw; 
-    max-size: 2.5rem; 
+    font-size: 3vw; 
+    max-size: 2.5rem;
 }
 
 .abouttext {
@@ -163,8 +163,8 @@
 }
 
 .content img {
-    width: 90vw; 
-    max-width: 700px; 
+    width: 90vw;
+    max-width: 700px;
     height: auto;
 }
 
@@ -175,8 +175,7 @@
     }
 
     .main-circle {
-        width: 12vw;
-        height: 12vw;
+        width: 12vw; 
     }
 
     .dropdown-circle {
