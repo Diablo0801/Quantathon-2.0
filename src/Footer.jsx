@@ -10,7 +10,7 @@ const Footer = () => {
       </div>
       <div className="footer-content">
         <div className="footer-logo">
-          <img src="/public/assets/QUANTUMLOGO.png" alt="Quantum Logo" />
+          <img src="/assets/QUANTUMLOGO.png" alt="Quantum Logo" />
         </div>
         <div className="footer-menu">
           <div className="explore">

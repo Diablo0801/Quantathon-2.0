@@ -12,7 +12,7 @@ import EventDetails from './EventDetails'
 import FAQ from './faq'
 import Sponsors from './sponsors'
 import TracksComponent from './TracksComponent/TracksComponent'
-// import Guest from './guests'
+import Guest from './guests'
 
 
 function App() {
@@ -25,11 +25,11 @@ function App() {
       <Countdown/>
       <About/>
       <Qiskit/>
+      <Guest/>
       <EventDetails/>
       <TracksComponent/>
-      
+      <Sponsors/>
       <FAQ/>
-      {/* <Guest/> */}
     </>
   )
 }
