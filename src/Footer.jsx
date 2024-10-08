@@ -10,7 +10,7 @@ const Footer = () => {
       </div>
       <div className="footer-content">
         <div className="footer-logo">
-          <img src="/assets/QUANTUMLOGO.png" alt="Quantum Logo" />
+          <img src="/public/assets/QUANTUMLOGO.png" alt="Quantum Logo" />
         </div>
         <div className="footer-menu">
           <div className="explore">
@@ -26,8 +26,8 @@ const Footer = () => {
             <h4>Contact Us</h4>
             <ul>
               <li><a href="mailto:srmqcc@gmail.com">srmqcc@gmail.com</a></li>
-              <li><a href="tel:+1234567890">+917995738255</a></li>
-              <li><a href="tel:+1234567890">+918011922099</a></li>
+              <li><a href="tel:+917995738255">+917995738255</a></li>
+              <li><a href="tel:+918011922099">+918011922099</a></li>
             </ul>
           </div>
         </div>
