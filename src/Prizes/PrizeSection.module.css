@@ -1,0 +1,126 @@
+.prizeContainer {
+  text-align: center;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Ensures the container takes up the full viewport height */
+}
+
+.prizeTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #94D92A; /* Green color */
+}
+
+.categoryTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 40px 0 20px 0;
+  color: #94D92A; /* Green color */
+}
+
+.mainPrizeGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px; /* Increase gap for larger icons */
+  margin-bottom: 40px; /* Add margin to separate from category prizes */
+}
+
+/* Main Prize Cards */
+.mainPrizeCard {
+  color: white;
+  padding: 25px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border with transparency */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.mainPrizeCard:hover {
+  transform: translateY(-8px); /* More noticeable lift on hover */
+}
+
+/* Gold Border for 1st Prize */
+.goldBorder {
+  border-color: rgba(255, 215, 0, 0.6); /* Gold color with transparency */
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.8); /* Stronger gold glow */
+}
+
+.goldBorder:hover {
+  box-shadow: 0 8px 15px rgba(255, 215, 0, 0.8); /* Stronger gold glow on hover */
+}
+
+/* Silver Border for 2nd Prize */
+.silverBorder {
+  border-color: rgba(192, 192, 192, 0.6); /* Silver color with transparency */
+  box-shadow: 0 0 8px rgba(192, 192, 192, 0.8); /* Stronger silver glow */
+}
+
+.silverBorder:hover {
+  box-shadow: 0 8px 15px rgba(192, 192, 192, 0.8); /* Stronger silver glow on hover */
+}
+
+/* Bronze Border for 3rd Prize */
+.bronzeBorder {
+  border-color: rgba(205, 127, 50, 0.6); /* Bronze color with transparency */
+  box-shadow: 0 0 8px rgba(205, 127, 50, 0.8); /* Stronger bronze glow */
+}
+
+.bronzeBorder:hover {
+  box-shadow: 0 8px 15px rgba(205, 127, 50, 0.8); /* Stronger bronze glow on hover */
+}
+
+/* Border for Track Prizes with Green Effect */
+.categoryGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.categoryCard {
+  color: white;
+  padding: 25px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(34, 139, 34, 0.5); /* Green border with transparency */
+  box-shadow: 0 0 8px rgba(34, 139, 34, 0.7); /* Stronger green glow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.categoryCard:hover {
+  transform: translateY(-8px); /* Noticeable lift on hover */
+  box-shadow: 0 8px 15px rgba(34, 139, 34, 0.7); /* Stronger green shadow on hover */
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px; /* Increased margin for better spacing */
+}
+
+.prizeTitleCard {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.prizeAmount {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+@media (min-width: 850px) {
+  .mainPrizeGrid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for main prizes on larger screens */
+  }
+
+  .categoryGrid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for categories on larger screens */
+  }
+}
