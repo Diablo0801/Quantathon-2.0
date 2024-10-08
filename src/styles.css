@@ -23,6 +23,7 @@
     transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
     width: 220px;              /* Consistent button width */
     height: 70px;              /* Consistent button height */
+    margin-top:75px
 }
 
 /* Devfolio Button Styling */
@@ -70,9 +71,10 @@
 .floating-navbar {
     position: fixed;
     left: 20px;
-    top: 35%;
+    top: 20%;
     transform: translateY(-50%);
     z-index: 1100;
+
 }
 
 .main-circle {
@@ -98,7 +100,10 @@
     position: absolute;
     top: 100%;
     left: 50%;
+    border-radius: 10px;
     transform: translateX(-50%);
+    background-color: rgb(71, 71, 71,0.5);
+    backdrop-filter: blur(2px);
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -149,8 +154,8 @@
 }
 
 .abouttext {
-    margin-top: 300px;
-    margin-bottom: 300px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .content img{

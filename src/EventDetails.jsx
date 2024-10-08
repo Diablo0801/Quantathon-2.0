@@ -56,7 +56,7 @@ const EventDetails = () => {
         </div>
         <div className="w-[250px] h-[300px] border-2 border-white hover:border-[rgb(133,243,19)] hover:bg-mentor-card rounded-xl p-5 hover:shadow-[0_0_10px_1px_rgba(0,0,0)] flex flex-col justify-center items-center duration-150" style={{ backgroundColor: 'rgb(16, 16, 21)' }}>
             <img className="w-[150px] h-[175px] object-cover rounded-lg duration-200" src="\assets\Hrishi - Hrishi Sarma.jpg" alt="image here" />
-            <h1 className="mt-5 text-white text-center text-2xl font-medium">Hrishikesh Sarma</h1>
+            <h1 className="mt-5 text-white text-center text-2xl font-medium">Hrishikesh Sharma</h1>
         </div>        
         </div>
       </div>

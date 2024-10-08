@@ -6,7 +6,7 @@ const Qiskit = () => {
     id: 1,
     image: '/qiskit.jpg',
     heading: 'IBM qiskit',
-    text: 'Card 1 Description',
+    text: '18/10/2024 - 9 AM to 2 PM',
   };
 
   return (

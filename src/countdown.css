@@ -16,19 +16,21 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    margin-top: -800px;
-    margin-bottom: -350px;
+    margin-top: -500px;
+    /* margin-bottom: -350px; */
 }
 
-h3 {
-    font-size: 48px; /* Increase font size */
+.countdown-container h3 {
+    font-size: 20px; /* Increase font size */
     margin-bottom: 20px;
     color: #00ff7f; /* Parrot Green */
     text-transform: uppercase; /* Make it all uppercase */
     letter-spacing: 4px; /* Add letter spacing for a futuristic effect */
-    text-shadow: 0 0 10px #00ff7f, 0 0 20px #00ff7f, 0 0 30px #00ff7f; /* Neon glow effect */
+    text-shadow: 0 0 5px #00ff7f, 0 0 10px #00ff7f, 0 0 15px #00ff7f;
     font-weight: bold; /* Make it bold */
-    animation: glow 2s ease-in-out infinite alternate; /* Subtle glowing animation */
+    /* animation: glow 2s ease-in-out infinite alternate; Subtle glowing animation */
+    margin-top: 120px;
+    margin-bottom: 50px;
 }
 
 /* Neon glow effect animation */
