@@ -4,17 +4,20 @@
     align-items: center;
     width: 100%;
     min-height: 100vh;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .header {
-    width: 132%;
-    height: 500px; 
+    width: 100%;
+    height: 400px;
     background-image: url('header.png');
-    background-size: cover;
+    background-size: 100% auto; /* Fit the width and maintain aspect ratio */
     background-position: center;
     background-repeat: no-repeat;
 }
+
 
 .qiskitstuff {
     margin-top: 20px;

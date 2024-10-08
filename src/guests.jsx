@@ -11,7 +11,7 @@ const Guest = () => {
                     <img src="/assets/Guest1.jpg" alt="Guest" className="guest-card-image" />
                     <div className="guest-details">
                         <h3 className="guest-name">Jagan Narayan Natarajan</h3>
-                        <p className="guest-info">Jagan Narayan Natarajan completed his Masters in Opto Electronics and Optical Communication from IIT Delhi in the year 2002, and prior to that completed his Masters in Physics from IIT Madras. He has played different roles in the industry, spent most of his time as a mainframe developer, architect. He joined IBM in 2018 as a technical sales specialist for Z DevOps products, moved to London for the same role managing the UK & Ireland region, before joining IBM Research labs in 2023, in the quantum support team.</p>
+                        <p className="guest-info">Jagan Narayan Natarajan holds a Master’s in Opto Electronics and Optical Communication from IIT Delhi and a Master’s in Physics from IIT Madras. He has worked extensively as a mainframe developer and architect. Joining IBM in 2018 as a technical sales specialist for Z DevOps, he later moved to London, managing the UK & Ireland region, and in 2023, he joined IBM Research Labs in the quantum support team.</p>
                     </div>
                 </div>
             </div>

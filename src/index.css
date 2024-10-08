@@ -24,6 +24,8 @@ html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 @keyframes moveDown {
