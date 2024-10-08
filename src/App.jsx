@@ -30,6 +30,7 @@ function App() {
       <TracksComponent/>
       <Sponsors/>
       <FAQ/>
+      <Footer/>
     </>
   )
 }

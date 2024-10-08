@@ -16,10 +16,9 @@ const Footer = () => {
           <div className="explore">
             <h4>Explore</h4>
             <ul>
-              {/* Replace <a> with <Link> for client-side routing */}
               <li><Link to="/">Home</Link></li>
               <li><Link to="/team">Team</Link></li>
-              <li><Link to="/Event">Events</Link></li>
+              <li><Link to="/events">Events</Link></li>
             </ul>
           </div>
           <div className="contact">
@@ -53,7 +52,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="copyright">
-        <p>&copy;copyright 2023 - QUANTUM COMPUTING CLUB SRM </p>
+        <p>&copy;copyright 2023 - QUANTUM COMPUTING CLUB SRM</p>
       </div>
     </footer>
   );
