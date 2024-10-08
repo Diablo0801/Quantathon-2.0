@@ -6,7 +6,7 @@
 
 .faq-title {
   text-align: center;
-  color: #cdf2f3;
+  color: #67c818;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 20px;
@@ -28,13 +28,13 @@
   color: white;
   padding: 15px 20px;
   cursor: pointer;
-  border: 1px solid #cdf2f3;
+  border: 1px solid #55ce0f;
   border-radius: 8px;
   font-size: 1rem;
 }
 
 .faq-question:hover {
-  background-color: #6bb0b1;
+  background-color: #8fe913;
   transition: 0.3s;
 }
 
