@@ -13,6 +13,7 @@ import FAQ from './faq';
 import Sponsors from './sponsors';
 import TracksComponent from './TracksComponent/TracksComponent';
 import Guest from './guests';
+import PrizeSection from './Prizes/PrizeSection'
 
 function App() {
   const [count, setCount] = useState(0);
@@ -27,6 +28,7 @@ function App() {
       <section id="guests"><Guest /></section>
       <section id="events"><EventDetails /></section>
       <section id="tracks"><TracksComponent /></section>
+      <section id="PrizeSection"><PrizeSection /></section>
       <section id="sponsors"><Sponsors /></section>
       <section id="faq"><FAQ /></section>
       <Footer />
