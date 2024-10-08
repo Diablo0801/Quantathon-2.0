@@ -1,3 +1,4 @@
+/* General Content Styling */
 .content {
     min-height: 100vh; 
     width: 100vw; 
@@ -12,12 +13,17 @@
     margin-top: -250px;
 }
 
+/* Improved Logo Styling for Visibility */
 .quantathon-logo {
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
+    border: 3px solid white; /* Add border to improve visibility */
+    border-radius: 10px;     /* Rounded corners for smoother appearance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for better contrast */
 }
 
+/* Main Content Styling */
 .maincontent h2 {
     font-size: 2.5rem;
     margin-top: -50px;
@@ -29,108 +35,68 @@
     text-align: center;
 }
 
+/* About Section Styling */
 .about {
-    margin-top: 200px;
+    margin-top: 100px; /* Reduced space above the About section */
     font-size: 1.5rem;
     padding: 20px; 
     border-radius: 50px; 
-    margin-bottom: 250px;
+    margin-bottom: 400px; /* Additional space below the About section */
 }
 
-
-.apply-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-    background-color: #000000; 
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.apply-button:hover {
-    background-color: #ffffff; 
-    color: black;
-}
-
-.apply-button:focus {
-    outline: none;
-}
-
-
-/* .floating-navbar {
-    position: fixed;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1100;
-}
-
-.main-circle {
-    width: 80px;
-    height: 80px;
-    background-color: #000;
-    border-radius: 50%;
+/* Button Container Styling */
+.button-container {
     display: flex;
-    align-items: center;
     justify-content: center;
-    cursor: pointer;
-    position: relative;
-    transition: background-color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.4s ease-in-out;
-}
-
-.main-circle:hover {
-   
-}
-
-.circle-image {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-}
-
-.dropdown {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    display: flex;
     flex-direction: column;
-    gap: 10px;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
-}
-
-.main-circle:hover .dropdown {
-    opacity: 1;
-    visibility: visible;
-}
-
-.dropdown-circle {
-    width: 60px;
-    height: 60px;
-    
-    border-radius: 50%;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    transition: background-color 0.4s ease-in-out, transform 0.4s ease-in-out;
+    gap: 20px; /* Space between buttons */
+    margin-bottom: 80px; /* Increased space between buttons and About section */
 }
 
-.dropdown-circle:hover {
-  
-    transform: scale(1.05); 
+/* Custom Button Styling */
+.custom-button {
+    background-color: #2d3748; /* Dark grey background */
+    color: #ffffff;            /* White text color */
+    padding: 12px 24px;        /* Padding for button */
+    border: none;              /* No border */
+    border-radius: 8px;        /* Rounded corners */
+    font-size: 16px;           /* Font size */
+    cursor: pointer;           /* Pointer on hover */
+    display: flex;             /* Flexbox for centering */
+    align-items: center;       /* Vertically center icon and text */
+    justify-content: center;   /* Horizontally center content */
+    gap: 10px;                 /* Space between icon and text */
+    width: 300px;              /* Button width for consistency */
 }
 
-.dropdown-circle img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-} */
+.custom-button:hover {
+    background-color: #4a5568; /* Slightly lighter grey on hover */
+}
 
+/* Button Icon Styling with Transparency */
+.button-icon {
+    width: 40px;               /* Increased icon width */
+    height: 40px;              /* Increased icon height */
+    object-fit: contain;       /* Ensure icon fits without distortion */
+    padding: 2px;              /* Small padding around the icon */
+    margin-right: 15px;        /* Increased space to shift icon left */
+    opacity: 0.8;              /* Set transparency level for the icons */
+    transition: opacity 0.3s;  /* Smooth transition for hover effect */
+}
+
+/* Make icons fully visible on hover */
+.custom-button:hover .button-icon {
+    opacity: 1;                /* Fully visible icon on hover */
+}
+
+/* No Icon Button */
+.no-icon {
+    display: block;   /* Make sure the Register Now button doesn't use flex */
+    text-align: center;
+}
+
+/* Navbar and Floating Circle Menu (Retained from Previous) */
 .floating-navbar {
     position: fixed;
     left: 20px;
@@ -184,7 +150,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
     transition: background-color 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
 
