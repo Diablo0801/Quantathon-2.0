@@ -36,8 +36,10 @@ html {
 }
 
 .footer-logo img {
-    width: 178px;
-    height: 170px;
+    /* width: 178px;
+    height: 170px; */
+    width: 100px;
+    height: auto;
     margin-top: 25px;
 }
 
@@ -159,7 +161,7 @@ html {
     }
 
     .footer-logo img {
-        width: 130px; 
+        width: 100px; 
         height: auto; 
     }
 
