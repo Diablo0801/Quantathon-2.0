@@ -1,63 +1,17 @@
-/* General Content Styling */
-.content {
-    min-height: 100vh; 
-    width: 100vw; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    padding: 200px 0;
-    margin-bottom: -300px;
-    margin-top: -250px;
-}
-
-/* Improved Logo Styling for Visibility */
-.quantathon-logo {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    border: 3px solid white; /* Add border to improve visibility */
-    border-radius: 10px;     /* Rounded corners for smoother appearance */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for better contrast */
-}
-
-/* Main Content Styling */
-.maincontent h2 {
-    font-size: 2.5rem;
-    margin-top: -50px;
-}
-
-.maincontent p {
-    font-size: 1.5rem;
-    max-width: 100%; 
-    text-align: center;
-}
-
-/* About Section Styling */
-.about {
-    margin-top: 100px; /* Reduced space above the About section */
-    font-size: 1.5rem;
-    padding: 20px; 
-    border-radius: 50px; 
-    margin-bottom: 400px; /* Additional space below the About section */
-}
-
 /* Button Container Styling */
 .button-container {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: center;  /* Center the buttons */
     align-items: center;
-    gap: 20px; /* Space between buttons */
+    gap: 200px; /* Space between buttons */
     margin-bottom: 80px; /* Increased space between buttons and About section */
+    flex-direction: row; /* Align buttons horizontally */
 }
 
 /* Custom Button Styling */
 .custom-button {
-    background-color: #2d3748; /* Dark grey background */
-    color: #ffffff;            /* White text color */
+    background-color: #000000; /* Dark grey background */
+    color: white;              /* White text */
     padding: 12px 24px;        /* Padding for button */
     border: none;              /* No border */
     border-radius: 8px;        /* Rounded corners */
@@ -67,17 +21,20 @@
     align-items: center;       /* Vertically center icon and text */
     justify-content: center;   /* Horizontally center content */
     gap: 10px;                 /* Space between icon and text */
-    width: 300px;              /* Button width for consistency */
+    width: 150px;              /* Button width for consistency */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
 }
 
-.custom-button:hover {
-    background-color: #1bd411; /* Slightly lighter grey on hover */
+/* Register Now Button Hover Effect */
+.custom-button.no-icon:hover {
+    background-color: white;   /* Change background to white */
+    color: black;              /* Change text color to black */
 }
 
 /* Button Icon Styling with Transparency */
 .button-icon {
-    width: 80px;               /* Increased icon width */
-    height: 80px;              /* Increased icon height */
+    width: 200px;               /* Increased icon width */
+    height: 200px;              /* Increased icon height */
     object-fit: contain;       /* Ensure icon fits without distortion */
     padding: 2px;              /* Small padding around the icon */
     margin-right: 15px;        /* Increased space to shift icon left */
@@ -161,4 +118,24 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
+}
+
+.content {
+
+    margin-top: 100px;
+  
+
+}
+.abouttext h1 {
+    margin-bottom: 50px;
+}
+
+.content h2{
+    margin-top: -30px;
+    font-size: 3.5rem;
+}
+
+.abouttext {
+    margin-top: 300px;
+    margin-bottom: 300px;
 }
