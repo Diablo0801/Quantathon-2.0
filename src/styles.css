@@ -3,43 +3,56 @@
     display: flex;
     justify-content: center;  /* Center the buttons */
     align-items: center;
-    gap: 200px; /* Space between buttons */
-    margin-bottom: 80px; /* Increased space between buttons and About section */
+    gap: 50px; /* Space between buttons */
+    margin-bottom: 80px; /* Space between buttons and About section */
     flex-direction: row; /* Align buttons horizontally */
 }
 
-/* Custom Button Styling */
+/* Common Button Styling */
 .custom-button {
-    background-color: #000000; /* Dark grey background */
+    background-color: #000000; /* Dark background */
     color: white;              /* White text */
     padding: 12px 24px;        /* Padding for button */
     border: none;              /* No border */
-    border-radius: 8px;        /* Rounded corners */
+    border-radius: 10px;        /* Rounded corners */
     font-size: 16px;           /* Font size */
     cursor: pointer;           /* Pointer on hover */
     display: flex;             /* Flexbox for centering */
-    align-items: center;       /* Vertically center icon and text */
+    align-items: center;       /* Vertically center content */
     justify-content: center;   /* Horizontally center content */
-    gap: 10px;                 /* Space between icon and text */
-    width: 150px;              /* Button width for consistency */
     transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+    width: 220px;              /* Consistent button width */
+    height: 70px;              /* Consistent button height */
 }
 
-/* Register Now Button Hover Effect */
-.custom-button.no-icon:hover {
-    background-color: white;   /* Change background to white */
-    color: black;              /* Change text color to black */
+/* Devfolio Button Styling */
+.devfolio-button {
+    background-color: #1e1e1e; /* Specific background color for Devfolio */
 }
 
-/* Button Icon Styling with Transparency */
+.devfolio-button:hover {
+    background-color: #7b7b7b; /* Hover background color */
+    color: #000000;            /* Hover text color */
+}
+
+/* Discord Button Styling */
+.discord-button {
+    background-color: #3f48af; /* Discord's brand color */
+}
+
+.discord-button:hover {
+    background-color: #737bdc; /* Darker hover effect for Discord */
+}
+
+/* Button Icon Styling */
 .button-icon {
-    width: 200px;               /* Increased icon width */
-    height: 200px;              /* Increased icon height */
+    width: 40px;               /* Icon width */
+    height: 40px;              /* Icon height */
     object-fit: contain;       /* Ensure icon fits without distortion */
     padding: 2px;              /* Small padding around the icon */
-    margin-right: 15px;        /* Increased space to shift icon left */
-    opacity: 0.8;              /* Set transparency level for the icons */
-    transition: opacity 0.3s;  /* Smooth transition for hover effect */
+    margin-right: 10px;        /* Space between icon and text */
+    opacity: 0.8;              /* Set transparency level for icons */
+    transition: opacity 0.3s;  /* Smooth hover effect for icons */
 }
 
 /* Make icons fully visible on hover */

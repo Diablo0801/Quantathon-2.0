@@ -7,18 +7,15 @@ const About = () => {
       {/* Button Container for the Devfolio, Discord, and Register Buttons */}
       <div className="button-container">
         {/* Apply with Devfolio Button */}
-        <button className="custom-button">
-          <img src="./devfolio.svg" alt="Devfolio Icon" className="button-icon" />
+        <button className="custom-button devfolio-button">
+          <img src="./devfolio.png" alt="Devfolio Icon" className="button-icon" />
+          Devfolio
         </button>
 
-        {/* Register Now Button - No Icon */}
-        {/* <button className="custom-button no-icon">
-          Register Now
-        </button> */}
-
         {/* Join the Discord Button */}
-        <button className="custom-button">
+        <button className="custom-button discord-button">
           <img src="./discord.png" alt="Discord Icon" className="button-icon" />
+          Discord
         </button>
       </div>
 
