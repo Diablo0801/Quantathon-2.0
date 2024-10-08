@@ -24,6 +24,12 @@
     width: 90%;
 }
 
+.timelinecontainer img {
+    display: block;
+    margin: 0 auto;
+}
+
+
 .cardscontainer {
     position: relative;
     width: 100%;

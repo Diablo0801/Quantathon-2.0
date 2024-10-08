@@ -1,12 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="scroll-to-top">
-        <a href="#top"><i className="fas fa-arrow-up"></i></a>
+        <a href="#home"><i className="fas fa-arrow-up"></i></a>
       </div>
       <div className="footer-content">
         <div className="footer-logo">
@@ -16,9 +15,10 @@ const Footer = () => {
           <div className="explore">
             <h4>Explore</h4>
             <ul>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/team">Team</Link></li>
-              <li><Link to="/events">Events</Link></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#tracks">Tracks</a></li>
+              <li><a href="#guests">Chief Guests</a></li>
+              <li><a href="#qiskit">Qiskit</a></li>
             </ul>
           </div>
           <div className="contact">
@@ -52,7 +52,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="copyright">
-        <p>&copy;copyright 2023 - QUANTUM COMPUTING CLUB SRM</p>
+        <p>&copy; 2023 - QUANTUM COMPUTING CLUB SRM</p>
       </div>
     </footer>
   );

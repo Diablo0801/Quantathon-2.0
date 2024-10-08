@@ -22,6 +22,10 @@ const Qiskit = () => {
             </div>
           </div>
         </div>
+        <div className='timelinecontainer'>
+          {/* <h1>QUANTATHON TIMELINE</h1> */}
+          <img src="/assets/timeline.jpg" alt="" />
+        </div>
       </div>
     </div>
   );
