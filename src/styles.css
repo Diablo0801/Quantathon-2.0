@@ -71,15 +71,16 @@
 .floating-navbar {
     position: fixed;
     left: 20px;
-    top: 20%;
+    top: 10%; 
     transform: translateY(-50%);
     z-index: 1100;
-
 }
 
 .main-circle {
-    width: 80px;
-    height: 80px;
+    width: 10vw; 
+    height: 10vw;
+    min-width: 50px; 
+    min-height: 50px;
     background-color: rgba(0, 0, 0, 1);
     border-radius: 50%;
     display: flex;
@@ -91,8 +92,8 @@
 }
 
 .circle-image {
-    width: 60px;
-    height: 60px;
+    width: 80%; 
+    height: 80%;
     border-radius: 50%;
 }
 
@@ -119,8 +120,10 @@
 }
 
 .dropdown-circle {
-    width: 60px;
-    height: 60px;
+    width: 9vw; 
+    height: 9vw;
+    min-width: 40px;
+    min-height: 40px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -133,24 +136,25 @@
 }
 
 .dropdown-circle img {
-    width: 50px;
-    height: 50px;
+    width: 80%; 
+    height: 80%;
     border-radius: 50%;
 }
 
 .content {
-
     margin-top: 30px;
-  
-
+    text-align: center; 
+    padding: 0 20px; 
 }
+
 .abouttext h1 {
     margin-bottom: 50px;
 }
 
-.content h2{
+.content h2 {
     margin-top: -10px;
-    font-size: 2.5rem;
+    font-size: 5vw; 
+    max-size: 2.5rem; 
 }
 
 .abouttext {
@@ -158,8 +162,39 @@
     margin-bottom: 0px;
 }
 
-.content img{
-    width: 700px; /* Adjust the size as needed */
+.content img {
+    width: 90vw; 
+    max-width: 700px; 
     height: auto;
 }
 
+@media (max-width: 768px) {
+    .floating-navbar {
+        left: 10px;
+        top: 15%; 
+    }
+
+    .main-circle {
+        width: 12vw;
+        height: 12vw;
+    }
+
+    .dropdown-circle {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .custom-button {
+        width: 150px; 
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .content img {
+        width: 80vw; 
+    }
+
+    .content h2 {
+        font-size: 4vw; 
+    }
+}
