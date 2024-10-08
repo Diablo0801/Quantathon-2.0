@@ -1,12 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+.countdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
 h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #00ff7f; /* Parrot Green */
 }
 
-h2 {
-    font-size: 48px;
-
-    margin: 20px 0;
+.countdown-timer {
+    display: flex;
+    gap: 20px;
 }
 
+.time-section {
+    background-color: #000;
+    border: 3px solid #00ff7f; /* Parrot Green border */
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 120px;
+    position: relative;
+    overflow: hidden;
+}
 
+.time {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    animation: slideUp 1s ease-in-out infinite;
+}
+
+.label {
+    margin-top: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #00ff7f;
+}
+
+/* Slide-up animation for the countdown numbers */
+@keyframes slideUp {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
