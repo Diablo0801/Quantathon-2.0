@@ -103,24 +103,33 @@
 
     .guest-card {
         width: 80%; /* Full width on small screens */
-        flex-direction: row; /* Maintain horizontal layout */
-        justify-content: space-between; /* Keep image on the right */
+        flex-direction: column; /* Stack image and details vertically */
+        align-items: center; /* Center-align content */
         margin-bottom: 20px;
-    }
-
-    .guest-name {
-        font-size: 1em;
-    }
-
-    .guest-info {
-        font-size: 0.8rem;
-        line-height: 0.8rem;
     }
 
     .guest-card-image {
         width: 100px;
         height: 100px;
         padding: 0;
-        margin-left: 10px;
+        margin-bottom: 10px; /* Space below the image */
+        order: -1; /* Ensure image is on top */
+    }
+
+    .guest-details {
+        padding: 0;
+        text-align: justify;
+        
+    }
+
+    .guest-name {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .guest-info {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        text-align: center; /* Center-align text on small devices */
     }
 }
