@@ -144,11 +144,17 @@
 }
 
 .content h2{
-    margin-top: -30px;
-    font-size: 3.5rem;
+    margin-top: -10px;
+    font-size: 2.5rem;
 }
 
 .abouttext {
     margin-top: 300px;
     margin-bottom: 300px;
 }
+
+.content img{
+    width: 700px; /* Adjust the size as needed */
+    height: auto;
+}
+

@@ -5,7 +5,7 @@ const maincontent = () => {
   return (
     <div id="main" className="content">
           <img
-            src="https://fontmeme.com/permalink/241005/71792b734988fad71ee7bf1436cf67ce.png"
+            src="https://fontmeme.com/permalink/241008/3aff4571abd2c76a9e2b4dd5b03fe6fa.png"
             alt="tron-font"
             className="quantathon-logo"
           />
