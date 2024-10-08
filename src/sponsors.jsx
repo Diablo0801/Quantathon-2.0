@@ -1,10 +1,9 @@
-// Sponsors.jsx
 import React from 'react';
 import './Sponsors.css';
 
 const sponsors = {
   platinum: [
-    { name: 'Kwantum Research Labs', logo: './Kwantum.jpg' },
+    { name: 'Kwantum Research Labs', logo: './Kwantum.png' },
     { name: 'IBM', logo: './IBM.jpg' },
     { name: 'QUENTANGLE', logo: './Quentangle.jpg' },
   ],
