@@ -35,7 +35,7 @@ const TracksComponent = () => {
   return (
     <div id="tracks" className="flex flex-col items-center py-10">
       <h1 className="text-[#94D92A] text-3xl sm:text-5xl font-bold mb-6 sm:mb-12">
-        Tracks
+        TRACKS
       </h1>
 
       <div className="flex justify-center space-x-4 sm:space-x-10 mb-8 sm:mb-12">

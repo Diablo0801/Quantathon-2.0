@@ -39,7 +39,7 @@ const PrizeSection = () => {
 
   return (
     <div className={styles.prizeContainer}>
-      <h2 className={styles.prizeTitle}>Prizes</h2>
+      <h2 className={styles.prizeTitle}>PRIZES</h2>
 
       {/* Main Prizes Section */}
       <div className={styles.mainPrizeGrid}>
