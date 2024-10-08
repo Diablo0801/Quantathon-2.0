@@ -3,37 +3,32 @@ import './countdown.css'
 
 const App = () => {
     const Ref = useRef(null);
-    const [timer, setTimer] = useState("00:00:00");
+    const [timer, setTimer] = useState({ days: "00", hours: "00", minutes: "00", seconds: "00" });
 
     const getTimeRemaining = (e) => {
         const total = Date.parse(e) - Date.parse(new Date());
         const seconds = Math.floor((total / 1000) % 60);
         const minutes = Math.floor((total / 1000 / 60) % 60);
         const hours = Math.floor((total / 1000 / 60 / 60) % 24);
-        const days = Math.floor(total / (1000 * 60 * 60 * 24)); 
+        const days = Math.floor(total / (1000 * 60 * 60 * 24));
         return {
             total,
-            days,
-            hours,
-            minutes,
-            seconds,
+            days: days > 9 ? days : "0" + days,
+            hours: hours > 9 ? hours : "0" + hours,
+            minutes: minutes > 9 ? minutes : "0" + minutes,
+            seconds: seconds > 9 ? seconds : "0" + seconds,
         };
     };
 
     const startTimer = (e) => {
         let { total, days, hours, minutes, seconds } = getTimeRemaining(e);
         if (total >= 0) {
-            setTimer(
-                (days > 9 ? days : "0" + days) + ":" +
-                (hours > 9 ? hours : "0" + hours) + ":" +
-                (minutes > 9 ? minutes : "0" + minutes) + ":" +
-                (seconds > 9 ? seconds : "0" + seconds)
-            );
+            setTimer({ days, hours, minutes, seconds });
         }
     };
 
     const clearTimer = (e) => {
-        setTimer("02:00:00:00"); 
+        setTimer({ days: "02", hours: "00", minutes: "00", seconds: "00" });
 
         if (Ref.current) clearInterval(Ref.current);
         const id = setInterval(() => {
@@ -44,7 +39,7 @@ const App = () => {
 
     const getDeadTime = () => {
         let deadline = new Date();
-        deadline.setHours(deadline.getHours() + 48); 
+        deadline.setHours(deadline.getHours() + 48);
         return deadline;
     };
 
@@ -58,10 +53,26 @@ const App = () => {
     };
 
     return (
-        <div style={{ textAlign: "center", margin: "auto" }}>
+        <div className="countdown-container">
             <h3>Time Remaining</h3>
-            <h2>{timer}</h2>
-            
+            <div className="countdown-timer">
+                <div className="time-section">
+                    <span className="time">{timer.days}</span>
+                    <span className="label">Days</span>
+                </div>
+                <div className="time-section">
+                    <span className="time">{timer.hours}</span>
+                    <span className="label">Hours</span>
+                </div>
+                <div className="time-section">
+                    <span className="time">{timer.minutes}</span>
+                    <span className="label">Minutes</span>
+                </div>
+                <div className="time-section">
+                    <span className="time">{timer.seconds}</span>
+                    <span className="label">Seconds</span>
+                </div>
+            </div>
         </div>
     );
 };
