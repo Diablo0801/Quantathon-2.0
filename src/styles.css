@@ -1,36 +1,4 @@
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    z-index: 1000;
-}
-
-.navbar ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-}
-
-.navbar a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    padding: 15px 20px;
-    display: block;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-}
-
-.navbar a:hover {
-    background-color: hsl(0, 0%, 100%);
-    color: rgb(0, 0, 0);
-}
-
-.maincontent {
+.content {
     min-height: 100vh; 
     width: 100vw; 
     display: flex;
@@ -40,7 +8,8 @@
     text-align: center;
     color: white;
     padding: 200px 0;
-    margin-bottom: -800px;
+    margin-bottom: -300px;
+    margin-top: -250px;
 }
 
 .quantathon-logo {
@@ -60,19 +29,171 @@
     text-align: center;
 }
 
-.first {
-    align-items: center;
-    display: flex;
-}
-
-.image {
-    background-image: url('/header.png');
-}
-
 .about {
     margin-top: 200px;
     font-size: 1.5rem;
     padding: 20px; 
     border-radius: 50px; 
     margin-bottom: 400px;
+}
+
+
+.apply-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: #000000; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.apply-button:hover {
+    background-color: #ffffff; 
+    color: black;
+}
+
+.apply-button:focus {
+    outline: none;
+}
+
+
+/* .floating-navbar {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1100;
+}
+
+.main-circle {
+    width: 80px;
+    height: 80px;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.4s ease-in-out;
+}
+
+.main-circle:hover {
+   
+}
+
+.circle-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.dropdown {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+}
+
+.main-circle:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-circle {
+    width: 60px;
+    height: 60px;
+    
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.dropdown-circle:hover {
+  
+    transform: scale(1.05); 
+}
+
+.dropdown-circle img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+} */
+
+.floating-navbar {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1100;
+}
+
+.main-circle {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.4s ease-in-out;
+}
+
+.circle-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 20px; 
+    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+}
+
+.main-circle:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    transition: background-color 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.dropdown-circle:hover {
+    transform: scale(1.05); 
+}
+
+.dropdown-circle img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }

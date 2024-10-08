@@ -1,13 +1,10 @@
-body {
-    background-color: #2a013f;
-    font-family: 'Arial', sans-serif;
-  }
+
   
   .faq-section {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #2a013f;
+
   }
   
   .faq-title {
@@ -31,7 +28,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #2a013f;
+ 
     color: white;
     padding: 15px 20px;
     cursor: pointer;
@@ -53,7 +50,7 @@ body {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
-    background-color: #18012a;
+  
     padding: 0 20px;
     border-radius: 0 0 8px 8px;
   }
