@@ -12,26 +12,22 @@ const TracksComponent = () => {
   const tracks = [
     { 
       name: "Core Quantum", 
-      description: `The Core Quantum Track delves into the fundamental concepts of quantum computing and quantum technologies. Participants will embark on a quest to understand the principles behind quantum mechanics, quantum algorithms, and quantum hardware. The track aims to provide a hands-on experience in working with quantum programming languages, simulators, and actual quantum devices.
-From exploring quantum superposition and entanglement to implementing quantum algorithms such as Shor's algorithm and Grover's algorithm, this track will challenge participants to stretch their minds and develop quantum solutions to real-world problems. Participants will gain insights into the unique advantages and limitations of quantum computing compared to classical computing.`,
+      description: `Explore fundamental quantum computing concepts, quantum mechanics, algorithms like Shor’s and Grover’s, and quantum hardware. Participants will work with quantum programming languages and simulators, gaining insights into the unique advantages of quantum computing.`,
       image: quantumCoreImage 
     },
     { 
       name: "AI/ML", 
-      description: `The AI ML Track is focused on exploring the vast potential of artificial intelligence and machine learning in solving complex challenges across various domains. Participants in this track will have the opportunity to work on cutting-edge projects, applying state-of-the-art algorithms and techniques to real-world datasets.
-From predictive analytics and natural language processing to computer vision and reinforcement learning, the AI ML Track encompasses a wide range of exciting areas in the field of AI. Participants can choose projects aligned with their interests, enabling them to delve deep into specific subdomains of AI and build their expertise.`,
+      description: `Dive into AI and machine learning projects, applying algorithms to real-world datasets. Participants can explore predictive analytics, NLP, computer vision, and more, choosing projects aligned with their interests.`,
       image: aiMlImage 
     },
     { 
       name: "Quantum Machine Learning", 
-      description: `The Quantum Machine Learning Track merges the fields of quantum computing and machine learning, exploring how quantum algorithms can enhance AI applications. Participants will gain hands-on experience in developing and optimizing quantum machine learning models, delving into topics such as quantum data encoding, variational quantum classifiers, and more.
-This track will challenge participants to build cutting-edge quantum machine learning solutions while understanding how these quantum algorithms compare to classical methods.`,
+      description: `Merge quantum computing with AI, exploring quantum algorithms that enhance machine learning. Participants will build quantum models and compare them with classical methods.`,
       image: quantumMlImage 
     },
     { 
       name: "Open Innovation", 
-      description: `The Open Innovation Track is a blank canvas where participants are encouraged to think outside the box and tackle problems from various domains. There are no predefined themes or restrictions in this track, allowing participants to explore a wide array of topics that spark their curiosity and passion.
-Whether it's developing cutting-edge technologies, addressing societal issues, or creating novel applications, the track invites participants to let their imaginations run wild and embrace the freedom to innovate. Participants can choose to work on solo projects, form cross-functional teams, or collaborate with other participants during the Hackathon. They are encouraged to bring diverse skill sets, backgrounds, and perspectives to the table, fostering an environment of open dialogue and co-creation.`,
+      description: `An open track for creative problem-solving across various domains, where participants can work on solo or collaborative projects, addressing a wide range of challenges without predefined themes.`,
       image: openInnovationImage 
     }
   ];
