@@ -1,95 +1,126 @@
-.faq-section {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
+/* Base styles for large devices */
+.background {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.faq-title {
-  text-align: center;
-  color: #cdf2f3;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 20px;
+.guest-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
 }
 
-.faq-container {
-  border-radius: 8px;
-  overflow: hidden;
+.guest-title {
+    font-size: 4em;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    color: rgba(179, 28, 44);
 }
 
-.faq-item {
-  margin-bottom: 10px;
+.guest-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures image is on the right */
+    width: 550px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    background-color: rgba(33,36,44);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px; /* Add padding to the container */
 }
 
-.faq-question {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-  padding: 15px 20px;
-  cursor: pointer;
-  border: 1px solid #cdf2f3;
-  border-radius: 8px;
-  font-size: 1rem;
+.guest-card-image {
+    order: 2; /* Move the image to the right */
+    width: 150px; /* Fix width for the image */
+    height: 150px; /* Make it square */
+    object-fit: cover;
+    border-radius: 10px; /* Rounded corners */
+    border: 4px solid white; /* Add white border */
 }
 
-.faq-question:hover {
-  background-color: #6bb0b1;
-  transition: 0.3s;
+
+.guest-details {
+    order: 1; /* Ensure content appears on the left */
+    flex: 1;
+    padding-right: 20px; /* Space between text and image */
+    color: #fff;
 }
 
-.faq-toggle {
-  font-size: 1.5rem;
+.guest-name {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+    text-align: left;
 }
 
-.faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
-  padding: 0 20px;
+.guest-info {
+    margin: 0;
+    color: #ccc;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    text-align: justify;
 }
 
-.faq-answer.open {
-  max-height: 150px; /* Adjust as needed */
-  padding: 15px 20px;
+/* Medium devices (tablets, small desktops) */
+@media screen and (max-width: 960px) {
+    .guest-title {
+        font-size: 3em;
+    }
+
+    .guest-card {
+        width: 400px;
+        flex-direction: row; /* Maintain horizontal layout */
+        justify-content: space-between; /* Keep image on the right */
+    }
+
+    .guest-card-image {
+        width: 120px; /* Smaller image size */
+        height: 120px;
+        padding: 0;
+        margin-left: 10px;
+    }
+
+    .guest-details {
+        padding: 0;
+    }
 }
 
-.faq-answer p {
-  color: #fff;
-  margin: 0;
-}
+/* Small devices (phones) */
+@media screen and (max-width: 600px) {
+    .guest-title {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .faq-section {
-    padding: 10px;
-  }
+    .guest-card {
+        width: 80%; /* Full width on small screens */
+        flex-direction: row; /* Maintain horizontal layout */
+        justify-content: space-between; /* Keep image on the right */
+        margin-bottom: 20px;
+    }
 
-  .faq-title {
-    font-size: 1.8rem;
-  }
+    .guest-name {
+        font-size: 1em;
+    }
 
-  .faq-question {
-    font-size: 0.9rem;
-    padding: 12px 16px;
-  }
+    .guest-info {
+        font-size: 0.8rem;
+        line-height: 0.8rem;
+    }
 
-  .faq-toggle {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .faq-title {
-    font-size: 1.6rem;
-  }
-
-  .faq-question {
-    font-size: 0.8rem;
-    padding: 10px 12px;
-  }
-
-  .faq-toggle {
-    font-size: 1rem;
-  }
+    .guest-card-image {
+        width: 100px;
+        height: 100px;
+        padding: 0;
+        margin-left: 10px;
+    }
 }
