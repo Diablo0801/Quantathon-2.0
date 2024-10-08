@@ -28,8 +28,6 @@ const App = () => {
     };
 
     const clearTimer = (e) => {
-        setTimer({ days: "02", hours: "00", minutes: "00", seconds: "00" });
-
         if (Ref.current) clearInterval(Ref.current);
         const id = setInterval(() => {
             startTimer(e);
@@ -38,8 +36,7 @@ const App = () => {
     };
 
     const getDeadTime = () => {
-        let deadline = new Date();
-        deadline.setHours(deadline.getHours() + 48);
+        let deadline = new Date("2024-10-13T23:59:59");
         return deadline;
     };
 
