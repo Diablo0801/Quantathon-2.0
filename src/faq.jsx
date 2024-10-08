@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './faq.css'; 
+import './faq.css';
 
 const FAQ = () => {
   const [openFAQ, setOpenFAQ] = useState(null);
@@ -61,11 +61,9 @@ const FAQ = () => {
               {faq.question}
               <span className="faq-toggle">{openFAQ === index ? '-' : '+'}</span>
             </div>
-            {openFAQ === index && (
-              <div className="faq-answer">
-                <p>{faq.answer}</p>
-              </div>
-            )}
+            <div className={`faq-answer ${openFAQ === index ? 'open' : ''}`}>
+              <p>{faq.answer}</p>
+            </div>
           </div>
         ))}
       </div>
