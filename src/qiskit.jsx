@@ -11,7 +11,10 @@ const Qiskit = () => {
 
   return (
     <div className="content">
-      <div className="header"></div>
+      {/* Header image added directly as an <img> */}
+      <div className="header">
+        <img src="/header.png" alt="Header" className="header-image" />
+      </div>
       <div className="qiskitstuff">
         <div className="cardscontainer">
           <div id="qiskit" className="cards-slider">
@@ -22,9 +25,8 @@ const Qiskit = () => {
             </div>
           </div>
         </div>
-        <div id="timeline" className='timelinecontainer'>
-          {/* <h1>QUANTATHON TIMELINE</h1> */}
-          <img src="/assets/timeline.jpg" alt="" />
+        <div id="timeline" className="timelinecontainer">
+          <img src="/assets/timeline.jpg" alt="Timeline" />
         </div>
       </div>
     </div>
