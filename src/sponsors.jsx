@@ -1,5 +1,5 @@
 import React from 'react';
-import './Sponsors.css';
+import './sponsors.css';
 
 const sponsors = {
   platinum: [
